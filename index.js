@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
     res.send('Hello, CircleCI!')
 })
 
+app.get('/about', (req, res) => {
+    res.send('Hello, About CircleCI!')
+})
+
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`)
 })
